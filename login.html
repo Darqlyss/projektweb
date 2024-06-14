@@ -11,19 +11,63 @@
     <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .login-form {
+            max-width: 300px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #2b3e50;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-    <div class="container-fluid">
-    <h2>Přihlášení</h2>
-    <form action="/login" method="post">
-        <label for="username">Login:</label>
-        <input type="text" id="username" name="username" required><br><br>
+    <div class="container">
+        <div class="login-form">
+            <h2>Přihlášení</h2>
+            <form action="/login" method="post">
+                <div class="form-floating mt-3 mb-3">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="" required>
+                    <label for="username">Login:</label>
+                </div>
 
-        <label for="password">Heslo:</label>
-        <input type="password" id="password" name="password" required><br><br>
+                <div class="form-floating mt-3 mb-3">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="" required>
+                    <label for="password">Heslo:</label>
+                </div>
 
-        <button type="submit">Přihlásit se</button>
-    </form>
-</div>
+                <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                    <label for="terms" class="form-check-label">Pamatovat si údaje.</label>
+                </div>
+
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn btn-primary">Přihlásit se</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

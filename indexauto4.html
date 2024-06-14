@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0, initial-scale=1.0">
+    <title>Domů</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css">
+    <style>
+        .card-img-top {
+            object-fit: cover;
+            height: 200px; /* Adjust this value as needed */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Domů
+                  <span class="visually-hidden">(aktuální)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="random.html">Postup projektu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formular.html">Formulář</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Značky aut <i class="fa fa-car"></i>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="indexauto1.html">BMW</a>
+                  <a class="dropdown-item" href="indexauto2.html">Audi</a>
+                  <a class="dropdown-item" href="indexauto3.html">Mercedes-Benz</a>
+                  <a class="dropdown-item" href="indexauto4.html">Porsche</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Přihlášení</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registrace.html">Registrace</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row d-flex">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="auta_pics/porsche_911.jpg" class="card-img-top" alt="Porsche 911">
+                    <div class="card-body">
+                        <h5 class="card-title">Porsche 911</h5>
+                        <p class="card-text">Ikona sportovního designu s vynikajícím výkonem a jedinečným zážitkem z jízdy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="auta_pics/porsche_cayenne.jpeg" class="card-img-top" alt="Porsche Cayenne">
+                    <div class="card-body">
+                        <h5 class="card-title">Porsche Cayenne</h5>
+                        <p class="card-text">Luxusní SUV s výkonným motorem a komfortním interiérem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="auta_pics/porsche_macan.jpeg" class="card-img-top" alt="Porsche Macan">
+                    <div class="card-body">
+                        <h5 class="card-title">Porsche Macan</h5>
+                        <p class="card-text">Kompaktní SUV s dynamickým řízením a elegantním designem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="auta_pics/porsche_panamera.jpg" class="card-img-top" alt="Porsche Panamera">
+                    <div class="card-body">
+                        <h5 class="card-title">Porsche Panamera</h5>
+                        <p class="card-text">Luxusní limuzína s vysokým výkonem a prvotřídním komfortem pro dlouhé cesty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col">
+                <h3>Porovnání Porsche modelů</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Typ</th>
+                            <th>Motor</th>
+                            <th>Spotřeba</th>
+                            <th>Interiér</th>
+                            <th>Výkon</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Porsche 911</td>
+                            <td>Sportovní vůz</td>
+                            <td>Výkonný</td>
+                            <td>Vysoká</td>
+                            <td>Luxusní</td>
+                            <td>Velký</td>
+                        </tr>
+                        <tr>
+                            <td>Porsche Cayenne</td>
+                            <td>Luxusní SUV</td>
+                            <td>Dynamický</td>
+                            <td>Střední</td>
+                            <td>Pohodlný</td>
+                            <td>Střední</td>
+                        </tr>
+                        <tr>
+                            <td>Porsche Macan</td>
+                            <td>Kompaktní SUV</td>
+                            <td>Výkonný</td>
+                            <td>Střední</td>
+                            <td>Moderní</td>
+                            <td>Střední</td>
+                        </tr>
+                        <tr>
+                            <td>Porsche Panamera</td>
+                            <td>Luxusní limuzína</td>
+                            <td>Výkonný</td>
+                            <td>Vysoká</td>
+                            <td>Prvotřídní</td>
+                            <td>Velký</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Cena a rok výroby Porsche modelů</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Cena</th>
+                            <th>Rok výroby</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Porsche 911</td>
+                            <td>3,000,000 Kč</td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td>Porsche Cayenne</td>
+                            <td>2,800,000 Kč</td>
+                            <td>2022</td>
+                        </tr>
+                        <tr>
+                            <td>Porsche Macan</td>
+                            <td>2,200,000 Kč</td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td>Porsche Panamera</td>
+                            <td>4,500,000 Kč</td>
+                            <td>2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
