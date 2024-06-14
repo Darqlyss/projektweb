@@ -60,12 +60,13 @@
       <form action="/action_page.php">
         <div class="mb-3 mt-3">
           <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          <input type="email" class="form-control" id="email" placeholder="Email" name="email">
         </div>
-    </form>
+        <h6>Váš dotaz:</h6>
     <div id="editor">
-        <p>Váš dotaz...</p>
+        <input type="text" class="form-control" >
     </div>
+</form>
     <script>
         ClassicEditor
             .create( document.querySelector( '#editor' ) )
